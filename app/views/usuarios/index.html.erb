@@ -1,0 +1,17 @@
+<center>
+<h1>Listando de usuarios</h1>
+
+<table>
+  <tr>
+    <th>email</th>
+    <th>contraseña</th>
+  </tr>
+
+  <% @usuarios.each do |usuario| %>
+    <tr>
+      <td><%= usuario.email %></td>
+      <td><%= usuario.password %></td>
+    </tr>
+  <% end %>
+</table>
+</center>

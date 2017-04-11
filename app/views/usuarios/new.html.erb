@@ -1,0 +1,23 @@
+<center>
+  <%= form_for @usuario do |f| %>
+  <!-- identificador de objeto para ese formulario !-->
+  <!-- la f sirve para crear dos etiquetas y dos campos de texto, uno para el título y otro
+  para el texto del artículo !-->
+
+  <p>
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </p>
+
+  <p>
+    <%= f.label :contraseña %><br>
+    <%= f.text_field :contraseña %>
+  </p>
+
+  <p>
+    <%= f.submit 'Enviar' %>
+  </p>
+<% end %>
+
+<%= link_to 'Volver', usuarios_path %>
+</center>
